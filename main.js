@@ -1,6 +1,6 @@
 const downloadLink = document.getElementById('download-link');
   downloadLink.addEventListener('click', () => {
-    const url = "./archivo/HV_Francisco-Soto-Flores.pdf";
+    const url = "./archivo/HV_Francisco-Soto.pdf";
     const filename = 'HV_Francisco-Soto-Flores.pdf';
     fetch(url)
       .then(response => response.blob())
