@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**************************************ENCABEZADO*****************************************/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #000;
+}
+header h1,
+header nav{
+    margin: 0 2rem 0 2rem;
+    padding: .5rem;
+}
+header h1,
+header a{
+    color: #ffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .5rem;
+}
+nav a:hover{
+    background-color: goldenrod;
+    border-radius: .6rem;
+    color: #000;
+}
+nav i{
+    font-size: 1.5rem;
+    color: #ce0ec4;
+    padding: .3rem;
+}
+/**************************************PERFIL*****************************************/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 4rem 0 4rem;
+}
+#perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.presentacion{
+    margin: 0 3rem 0 0;
+}
+.presentacion h3{
+    color:#ff8e0a;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.presentacion h4,
+.presentacion p{
+    font-weight: bold;
+}
+.presentacion h4{
+    font-size: 2rem;
+    color: #b5d30b;
+}
+.presentacion p{
+    text-align: justify;
+}
+.presentacion a{
+    text-decoration: none;
+    padding: .7rem 2rem;
+    position: relative;
+    top: 2rem;
+    background-color:#001c98;
+    color: #fff;
+    border-radius: 1rem;
+}
+.presentacion a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.foto-perfil{
+    width: 50rem;
+}
+.foto-perfil img{
+    width: 100%;
+    border-radius: 50%;
+}
+/**************************************SECCION CONOCIMIENTO*****************************************/
+#conocimiento{
+    width: 100%;
+    margin: 7rem 0 0rem 0;
+}
+#conocimiento h2,
+#proyecto h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border-bottom: .3rem solid #e0e0e0;
+    border-radius: 20rem;
+    font-size: 2rem;
+}
+#conocimiento h2:hover,
+#proyecto h2:hover{
+    background-color: #064b66;
+    cursor: pointer;
+}
+.habilidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 8rem 0;
+}
+.habilidad i{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.bxl-html5{
+    color: #ff8e0a;
+}
+.bxl-css3{
+    color: blue;
+}
+.bxl-bootstrap{
+    color: blueviolet;
+}
+.bxl-sass{
+    color: #ce0ec4;
+ }
+.bxl-javascript{
+    color: rgb(202, 202, 12);
+}
+.bxl-git{
+    color: orangered;
+}
+.bxl-html5:hover,
+.bxl-css3:hover,
+.bxl-bootstrap:hover,
+.bxl-sass:hover,
+.bxl-javascript:hover,
+.bxl-git:hover{
+    background-color: #fff;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.bxl-github:hover,
+.bxl-figma:hover{
+    background-color: #000;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+/**************************************SECCION PROYECTOS*****************************************/
+.list-proyecto{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.proyecto-1,
+.proyecto-2,
+.proyecto-3,
+.proyecto-4{
+    width: 35rem;
+    background-color: #2c2c6c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+    border-radius: 2rem;
+}
+.img-proyecto img{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+.descripcion{
+    text-align: center;
+}
+.descripcion h3,
+.descripcion p{
+    font-weight: lighter;
+}
+.btn{
+    padding: .8rem;
+}
+.btn button{
+    width: 5.5rem;
+    margin: .5rem;
+    padding: .6rem;
+    border: .1rem solid #4db5ff;
+    border-radius: .5rem;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn1{
+    background-color: #2c2c6c;
+}
+.btn1 a{
+    color:#4db5ff;
+}
+.btn2{
+    background-color:  #4db5ff;
+}
+.btn2 a{
+    color:#1f1f38;
+}
+.btn1:hover,
+.btn2:hover{
+    background-color: #fff;
+    border: none;
+}
+.btn1 a:hover,
+.btn2 a:hover{
+    color: #000;
+}
+/********************************** BOTON DE DESCARGA ***********************************************/
+.btn-descarga{
+    text-align: center;
+    padding: .5rem;
+    margin: 5rem 0;
+    border: .3rem solid #000;
+    width: 80%;
+    border-radius: 5rem;
+    transform: translate(-25px, -25px);
+    animation: boton 0.7s infinite alternate;
+    background-color:#fff;
+}
+@keyframes boton{
+    from {
+      transform: translate(-25px, -25px) scale(1);
+    }
+    to {
+      transform: translate(-25px, -25px) scale(0.8);
+    }
+}
+.btn-descarga a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+.btn-descarga i{
+    margin: 0 .2rem 0 0;
+}
+/********************************** PIE DE PÁGINA ***********************************************/
+footer{
+    background-color:#022644;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+}
+footer h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#contactame,
+#contactame .contacto{
+    display: flex;
+}
+.contacto a{
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #fff;
+    text-align: center
+}
+.contacto i{
+    color: #fff;
+    font-size: 2rem;
+}
+#contactame .contacto{
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+}
+/********************************** DISEÑO RSPONSIVO ***********************************************/
+@media screen and (max-width:767px){
+    header{
+        justify-content: center;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    nav li a{
+        font-size: .7rem;
+    }
+    nav{
+        position: fixed;
+        top: 89%;
+        background-color: #0a0635;
+        border-radius: 5rem;
+        border: .1rem solid yellow;
+    }
+    .menu4{
+        display: none;
+    }
+    nav a:hover{
+        background-color: #b5d30b;
+        border-radius: 10rem;
+    }
+    main{
+        margin: 3rem 2rem 0 2rem;
+        justify-content: center;
+    }
+    #perfil{
+        flex-direction: column;
+    }
+    .presentacion{
+        margin: 0;
+        text-align: center;
+    }
+    .presentacion h3{
+        font-size: 2.2rem;
+    }
+    .presentacion h4{
+        font-size: 1.5rem;
+    }
+    .foto-perfil{
+        width: 20rem;
+    }
+    .foto-perfil img{
+        width: 100%;
+        border-radius: 1.5rem;
+        margin: 4.5rem 0 0 0;
+    }
+    .habilidad{
+        flex-wrap: wrap;
+    }
+    .list-proyecto{
+        justify-content: center;
+    }
+    .proyecto-1,
+    .proyecto-2,
+    .proyecto-3,
+    .proyecto-4{
+        width: 100%;
+        border-radius: .8rem;
+    }
+    .img-proyecto img{
+        border-radius: .8rem;
+    }
+    .btn-descarga{
+        margin: 5rem 0 1rem 2rem;
+    }
+    .btn-descarga a{
+        font-size: 1rem;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #contactame{
+        flex-direction: column;
+        padding: 0;
+    }
+    .contacto i{
+        display: none;
+    }
+    #contactame .contacto{
+       padding: .2rem;
+    }
+    .red{
+        margin: 0 0 6rem 0;
+    }
+}
+@media screen and (min-width:767px) and (max-width:950px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        justify-content: center;
+    }
+    #perfil{
+        width: 100%;
+    }
+    .foto-perfil{
+     width: 150rem;
+    }
+    .habilidad{
+        flex-wrap: wrap;
+    }
+    #proyecto{
+        flex-wrap: nowrap;
+    }
+    .proyecto-1,
+    .proyecto-2,
+    .proyecto-3,
+    .proyecto-4{
+        width: 100%;
+    }
+    .list-proyecto{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contacto span{
+        display: none;
+    }
+}
+@media screen and (min-width:950px) and (max-width:1250px){
+    .foto-perfil{
+     width: 50rem;
+    }
+    #perfil{
+        width: 100%;
+    }
+    .proyecto-1,
+    .proyecto-2,
+    .proyecto-3,
+    .proyecto-4{
+        width: 100%;
+    }
+    .contacto span{
+        display: block;
+    }
+}
